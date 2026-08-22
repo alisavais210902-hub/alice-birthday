@@ -42,7 +42,7 @@ if (music) {
     const source = audioContext.createMediaElementSource(music);
     const gainNode = audioContext.createGain();
 
-    gainNode.gain.value = 0.08;
+    gainNode.gain.value = 0.04;
 
     source.connect(gainNode);
     gainNode.connect(audioContext.destination);
