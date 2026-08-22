@@ -36,13 +36,10 @@ document.addEventListener("DOMContentLoaded", () => {
             // Запускаем музыку
 
 if (music) {
-
-    music.volume = 0.005;
-
+    music.volume = 0.01;
     music.currentTime = 85;
 
-    music.play();
-
+    music.play().catch(() => {});
 }
 
 
