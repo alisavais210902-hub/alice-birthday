@@ -1964,3 +1964,9 @@ background:
     }
 }
 
+@media (max-width: 768px) {
+    .rsvp h2 {
+        white-space: nowrap;
+        font-size: 32px;
+    }
+}
