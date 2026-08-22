@@ -1157,11 +1157,20 @@ margin-top: 0;
     }
 
 
-    .hero h1 {
-    font-size: 44px;
-    max-width: 90%;
+.hero h1 {
+    font-size: 40px;
+    width: 100%;
+    max-width: 100%;
     box-sizing: border-box;
-    padding: 0 5px;
+    padding: 0;
+}
+
+.hero h1 br {
+    display: block;
+}
+
+.hero h1 {
+    white-space: nowrap;
 }
 
 
@@ -1961,12 +1970,5 @@ background:
     .background {
         max-width: 100%;
         overflow: hidden;
-    }
-}
-
-@media (max-width: 768px) {
-    .hero__text {
-        white-space: nowrap;
-        font-size: 15px;
     }
 }
