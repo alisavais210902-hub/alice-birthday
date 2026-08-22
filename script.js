@@ -36,10 +36,20 @@ document.addEventListener("DOMContentLoaded", () => {
             // Запускаем музыку
 
 if (music) {
-    music.volume = 0.01;
     music.currentTime = 85;
 
-    music.play().catch(() => {});
+    const audioContext = new (window.AudioContext || window.webkitAudioContext)();
+    const source = audioContext.createMediaElementSource(music);
+    const gainNode = audioContext.createGain();
+
+    gainNode.gain.value = 0.08;
+
+    source.connect(gainNode);
+    gainNode.connect(audioContext.destination);
+
+    audioContext.resume();
+
+    music.play();
 }
 
 
