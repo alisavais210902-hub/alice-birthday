@@ -2017,3 +2017,57 @@ body {
         overflow-wrap: break-word;
     }
 }
+
+
+/* ===================================================
+   MOBILE — FIX REAL HORIZONTAL OVERFLOW
+   =================================================== */
+
+@media (max-width: 768px) {
+
+    .hero__container {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .hero__photo,
+    .hero__content {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+    }
+
+    .hero h1 {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        overflow-wrap: anywhere;
+        word-break: normal;
+    }
+
+    .hero__text {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        overflow-wrap: anywhere;
+    }
+
+    .container {
+        min-width: 0;
+    }
+
+    .location__grid,
+    .menu__grid,
+    .countdown__grid {
+        min-width: 0;
+    }
+
+    .location__grid > *,
+    .menu__grid > *,
+    .countdown__grid > * {
+        min-width: 0;
+        max-width: 100%;
+    }
+}
