@@ -1158,10 +1158,11 @@ margin-top: 0;
 
 
     .hero h1 {
-
-        font-size: 44px;
-
-    }
+    font-size: 44px;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 0 5px;
+}
 
 
     .hero__age {
