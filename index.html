@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+<meta
+name="theme-color"
+content="#fcf5be">
+
+<meta
+name="description"
+content="Приглашаю тебя провести этот особенный вечер вместе со мной">
+
+<meta
+name="format-detection"
+content="telephone=no">
+
+<meta
+name="apple-mobile-web-app-capable"
+content="yes">
+
+<meta
+name="apple-mobile-web-app-status-bar-style"
+content="default">
+
+<meta
+name="color-scheme"
+content="light">
+
+<title>
+
+Приглашаю тебя на свой День рождения
+
+</title>
+
+<!-- Open Graph -->
+
+<meta
+property="og:type"
+content="website">
+
+<meta
+property="og:title"
+content="Приглашаю тебя на свой День рождения">
+
+<meta
+property="og:description"
+content="25 сентября • 18:00">
+
+<meta
+property="og:image"
+content="assets/images/preview.webp">
+
+<meta
+property="og:locale"
+content="ru_RU">
+
+<!-- favicon -->
+
+
+<!-- preload -->
+
+
+<link
+rel="preload"
+href="assets/fonts/Atziluth-Script.ttf"
+as="font"
+type="font/ttf"
+crossorigin>
+
+<link
+rel="preload"
+href="assets/images/alice.webp"
+as="image">
+
+<link
+rel="preload"
+href="assets/music/heads-will-roll.mp3"
+as="media">
+
+<link
+rel="stylesheet"
+href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- ===================================================
+LOADER
+=================================================== -->
+
+<div
+class="loader"
+id="loader">
+
+<div class="loader__background"></div>
+
+<div class="loader__content">
+
+<div class="loader__bow">
+
+<img
+
+src="assets/svg/bow.svg"
+
+alt="Бантик">
+
+</div>
+
+<button
+
+id="openInvitation"
+
+class="loader__button">
+
+Открыть приглашение
+
+</button>
+
+</div>
+
+</div>
+
+<!-- ===================================================
+BACKGROUND
+=================================================== -->
+
+<div class="background">
+
+<div class="background__paper"></div>
+
+<div class="background__gradient"></div>
+
+<div class="background__bows"></div>
+
+<div class="background__sparkles"></div>
+
+</div>
+
+<!-- ===================================================
+MUSIC
+=================================================== -->
+
+<audio
+
+id="music"
+
+preload="auto"
+
+loop>
+
+<source
+
+src="assets/music/heads-will-roll.mp3"
+
+type="audio/mpeg">
+
+</audio>
+
+<!-- ===================================================
+SITE
+=================================================== -->
+
+<div
+class="site"
+id="site">
+
+<!-- ===================================================
+HERO
+=================================================== -->
+
+<header
+
+class="hero"
+
+id="hero">
+
+<div class="hero__container">
+
+<!-- LEFT -->
+
+<div class="hero__photo">
+
+<div class="polaroid">
+
+<div class="polaroid__tape"></div>
+
+<div class="polaroid__shine"></div>
+
+<img
+
+src="assets/images/alice.webp"
+
+alt="Фото именинницы"
+
+class="polaroid__image">
+
+<div class="polaroid__shadow"></div>
+
+</div>
+
+</div>
+
+<!-- RIGHT -->
+
+<div class="hero__content">
+
+<div class="hero__date">
+
+    <span class="hero__date-main">
+    25 сентября  19:00
+</span>
+
+    <small>
+        уютный вечер<br>
+        в кругу близких людей
+    </small>
+
+</div>
+
+<div class="hero__divider">
+
+    <span></span>
+
+</div>
+
+<h1>
+    Приглашаю&nbsp;тебя&nbsp;на&nbsp;свой
+    <br>
+    <span class="hero__age-text">24-й</span>
+    День рождения
+</h1>
+
+<p class="hero__text">
+
+Я очень хочу разделить
+этот день именно с тобой.
+
+Будет уютный вечер,
+много вкусной еды,
+теплая атмосфера
+и отличная компания.
+
+Буду очень рада,
+если ты станешь
+частью этого праздника.
+
+</p>
+
+<a
+
+href="#story"
+
+class="hero__scroll">
+
+Листай вниз
+
+</a>
+
+</div>
+
+</div>
+
+</header>
+<!-- ===================================================
+STORY
+=================================================== -->
+
+<section
+    id="story"
+    class="story reveal">
+
+    <div class="container">
+
+        <div class="story__card">
+
+            <span class="section-tag">
+
+                Приглашение
+
+            </span>
+
+            <h2>
+
+                Я очень жду этот вечер
+
+            </h2>
+
+            <p>
+
+                Мой День рождения —
+                <strong>21 сентября</strong>.
+
+            </p>
+
+            <p>
+
+                Но праздновать мы будем
+                <strong>25 сентября</strong>,
+                чтобы спокойно провести этот вечер
+                вместе в уютной атмосфере.
+
+            </p>
+
+            <p>
+
+                Для меня будет очень ценно,
+                если именно ты разделишь
+                этот праздник со мной 
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ===================================================
+COUNTDOWN
+=================================================== -->
+
+<section
+    id="countdown"
+    class="countdown reveal">
+
+    <div class="container">
+
+        <span class="section-tag">
+
+            До встречи осталось
+
+        </span>
+
+        <h2>
+
+            Совсем немного
+
+        </h2>
+
+        <div class="countdown__grid">
+
+            <div class="countdown__item">
+
+                <span id="days">
+
+                    00
+
+                </span>
+
+                <small>
+
+                    Дней
+
+                </small>
+
+            </div>
+
+            <div class="countdown__item">
+
+                <span id="hours">
+
+                    00
+
+                </span>
+
+                <small>
+
+                    Часов
+
+                </small>
+
+            </div>
+
+            <div class="countdown__item">
+
+                <span id="minutes">
+
+                    00
+
+                </span>
+
+                <small>
+
+                    Минут
+
+                </small>
+
+            </div>
+
+            <div class="countdown__item">
+
+                <span id="seconds">
+
+                    00
+
+                </span>
+
+                <small>
+
+                    Секунд
+
+                </small>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ===================================================
+LOCATION
+=================================================== -->
+
+<!-- ===================================================
+LOCATION
+=================================================== -->
+
+<section
+    id="location"
+    class="location reveal">
+
+    <div class="container">
+
+        <div class="location__grid">
+
+            <div class="location__image">
+
+                <img
+                    src="assets/images/location.webp"
+                    alt="Место проведения праздника"
+                    loading="lazy">
+
+            </div>
+
+            <div class="location__content">
+
+                <span class="section-tag">
+
+                    Место встречи
+
+                </span>
+
+                <h2>
+
+                    Коттедж
+
+                </h2>
+
+                <p class="location__address">
+
+                    Городской пос. Токсово, Набережная ул., 10
+
+                </p>
+
+                <p class="location__description">
+
+                    Встречаемся
+                    <strong>25 сентября в 19:00</strong>.
+
+                    Нас ждёт уютный вечер,
+                    вкусная еда,
+                    приятная атмосфера
+                    и отличная компания.
+
+                </p>
+
+                <a
+                    href="https://yandex.ru/maps/-/CTrZ7S3s"
+                    target="_blank"
+                    rel="noopener"
+                    class="button">
+
+                    Как добраться
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ===================================================
+WISH
+=================================================== -->
+
+<section class="wish reveal">
+
+    <div class="container">
+
+        <div class="wish__card">
+
+            <span class="section-tag">
+                Небольшое пожелание
+            </span>
+
+            <p>
+                Для меня будет очень ценно,
+                если ты поддержишь атмосферу этого дня.
+            </p>
+
+            <p>
+                По возможности добавь в свой образ
+любой элемент <span class="color-accent">красного</span> цвета.
+            </p>
+
+            <p class="wish__thanks">
+                Спасибо!
+            </p>
+
+            <div class="color-palette">
+
+                <span class="color-dot color-dot--wine"></span>
+
+                <span class="color-dot color-dot--black"></span>
+
+                <span class="color-dot color-dot--milk"></span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ===================================================
+MENU
+=================================================== -->
+
+<section
+    id="menu"
+    class="menu reveal">
+
+    <div class="container">
+
+        <span class="section-tag">
+
+            Что нас ждёт
+
+        </span>
+
+        <h2>
+
+            Меню вечера
+
+        </h2>
+
+       <div class="menu__grid">
+
+    <article class="menu__card">
+
+        <img 
+            src="assets/images/shashlik.webp"
+            alt="Шашлык">
+
+        <h3>
+            Шашлык
+        </h3>
+
+    </article>
+
+
+    <article class="menu__card">
+
+        <img 
+            src="assets/images/salads.webp"
+            alt="Салаты">
+
+        <h3>
+            Салаты
+        </h3>
+
+    </article>
+
+
+    <article class="menu__card">
+
+        <img 
+            src="assets/images/snacks.webp"
+            alt="Закуски">
+
+        <h3>
+            Закуски
+        </h3>
+
+    </article>
+
+
+    <article class="menu__card">
+
+        <img 
+            src="assets/images/drinks.webp"
+            alt="Горячительные напитки">
+
+        <h3>
+            Горячительные напитки
+        </h3>
+
+    </article>
+
+</div>
+
+    </div>
+
+</section>
+<!-- ===================================================
+RSVP
+=================================================== -->
+
+<section
+    id="rsvp"
+    class="rsvp reveal">
+
+    <div class="container">
+
+        <div class="rsvp__card">
+
+            <span class="section-tag">
+
+                Подтверждение
+
+            </span>
+
+            <h2>
+
+                Буду очень рада увидеть тебя 
+
+            </h2>
+
+            <p>
+
+                Если ты сможешь прийти,
+                нажми кнопку ниже.
+
+                Она откроет наш общий чат,
+                где будет вся актуальная информация
+                о празднике.
+
+            </p>
+
+            <a
+
+                class="button button--large"
+
+                href="https://t.me/+wMqKf98n8bs2M2Qy"
+
+                target="_blank"
+
+                rel="noopener">
+
+                Я приду
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ===================================================
+FINAL
+=================================================== -->
+
+<section
+
+    id="final"
+
+    class="final">
+
+    <div class="final__background"></div>
+
+    <div class="container">
+
+        <div class="final__content">
+
+            <div class="final__bow">
+
+                <img
+
+                    src="assets/svg/bow.svg"
+
+                    alt="">
+
+            </div>
+
+            <h2>
+
+                Буду ждать тебя
+
+            </h2>
+
+            <p>
+
+                Спасибо,
+                что дочитал(а) приглашение
+                до самого конца.
+
+            </p>
+
+            <p>
+
+                Надеюсь,
+                этот вечер
+                подарит нам
+                много приятных воспоминаний.
+
+            </p>
+
+            <p class="final__date">
+
+    <span>
+        До встречи
+    </span>
+
+
+
+</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+</div>
+
+<!-- ===================================================
+SVG DEFINITIONS
+=================================================== -->
+
+<svg
+
+    width="0"
+
+    height="0"
+
+    style="position:absolute">
+
+    
+
+        <!-- Шашлык -->
+
+        <symbol
+
+            id="icon-bbq"
+
+            viewBox="0 0 24 24">
+
+            <path
+
+                d="M3 21L21 3M8 16L13 11M12 20L17 15"/>
+
+        </symbol>
+
+        <!-- Салат -->
+
+        <symbol
+
+            id="icon-salad"
+
+            viewBox="0 0 24 24">
+
+            <path
+
+                d="M4 12C4 18 8 21 12 21C16 21 20 18 20 12"/>
+
+        </symbol>
+
+        <!-- Закуски -->
+
+        <symbol
+
+            id="icon-snacks"
+
+            viewBox="0 0 24 24">
+
+            <path
+
+                d="M7 7H17V17H7Z"/>
+
+        </symbol>
+
+        <!-- Напитки -->
+
+        <symbol
+
+            id="icon-drinks"
+
+            viewBox="0 0 24 24">
+
+            <path
+
+                d="M9 3H15L14 9V21H10V9Z"/>
+
+        </symbol>
+
+    </defs>
+
+</svg>
+
+<!-- ===================================================
+JAVASCRIPT
+=================================================== -->
+
+<script
+    src="script.js"
+    defer></script>
+
+</body>
+
+</html>
+
+<!-- ===================================================
+NAVIGATION
+=================================================== -->
+
+<nav class="navigation">
+
+    <button 
+        class="navigation__button"
+        id="menuButton"
+        aria-label="Открыть меню">
+
+       <span></span>
+<span></span>
+<span></span>
+
+    </button>
+
+
+    <div class="navigation__links" id="navigationLinks">
+
+        <a href="#hero">
+            Главная
+        </a>
+
+        <a href="#story">
+            Приглашение
+        </a>
+
+        <a href="#countdown">
+            Таймер
+        </a>
+
+        <a href="#location">
+            Место
+        </a>
+
+        <a href="#menu">
+            Меню
+        </a>
+
+        <a href="#rsvp">
+            Я приду
+        </a>
+
+    </div>
+
+</nav>
