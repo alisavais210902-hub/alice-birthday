@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 if (music) {
 
-    music.volume = 0.10;
+    music.volume = 0.05;
 
     music.currentTime = 85;
 
