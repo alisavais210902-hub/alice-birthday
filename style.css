@@ -1931,3 +1931,60 @@ background:
     letter-spacing: 0.02em;
 
 }
+
+/* ===================================================
+   MOBILE HORIZONTAL SCROLL FIX
+   =================================================== */
+
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    position: relative;
+}
+
+* {
+    max-width: 100%;
+}
+
+img,
+svg,
+video,
+iframe {
+    max-width: 100%;
+}
+
+@media (max-width: 768px) {
+
+    .hero__container,
+    .container,
+    .location__grid,
+    .menu__grid,
+    .countdown__grid {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .hero__container,
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .polaroid {
+        max-width: calc(100vw - 40px);
+    }
+
+    .navigation {
+        right: 15px;
+    }
+
+    .navigation__links {
+        max-width: calc(100vw - 30px);
+    }
+}
