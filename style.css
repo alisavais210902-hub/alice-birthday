@@ -1933,45 +1933,60 @@ background:
 }
 
 /* ===================================================
-   MOBILE HORIZONTAL SCROLL FIX
+   FINAL MOBILE WIDTH FIX
    =================================================== */
 
-html,
+html {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: clip !important;
+    overscroll-behavior-x: none;
+}
+
 body {
     width: 100%;
     max-width: 100%;
-    overflow-x: hidden;
-}
-
-body {
+    min-width: 0;
+    overflow-x: clip !important;
+    overscroll-behavior-x: none;
     position: relative;
 }
 
-* {
+#site {
+    width: 100%;
     max-width: 100%;
+    min-width: 0;
+    overflow-x: clip;
 }
 
-img,
-svg,
-video,
-iframe {
+.background {
+    width: 100%;
     max-width: 100%;
+    overflow: hidden;
 }
 
 @media (max-width: 768px) {
 
-    .hero__container,
+    section,
+    header,
+    .hero,
     .container,
+    .hero__container,
     .location__grid,
     .menu__grid,
-    .countdown__grid {
-        width: 100%;
+    .countdown__grid,
+    .story__card,
+    .wish__card,
+    .rsvp__card,
+    .final {
         max-width: 100%;
+        min-width: 0;
         box-sizing: border-box;
     }
 
-    .hero__container,
-    .container {
+    .container,
+    .hero__container {
+        width: 100%;
         padding-left: 20px;
         padding-right: 20px;
     }
@@ -1981,10 +1996,24 @@ iframe {
     }
 
     .navigation {
+        max-width: calc(100vw - 30px);
         right: 15px;
     }
 
     .navigation__links {
         max-width: calc(100vw - 30px);
+    }
+
+    .hero h1,
+    .hero__text,
+    .story h2,
+    .wish h2,
+    .rsvp h2,
+    .menu h2,
+    .countdown h2,
+    .location h2,
+    .final h2 {
+        max-width: 100%;
+        overflow-wrap: break-word;
     }
 }
