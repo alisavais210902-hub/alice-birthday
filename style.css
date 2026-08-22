@@ -1163,13 +1163,14 @@ margin-top: 0;
     max-width: 100%;
     box-sizing: border-box;
     padding: 0;
+    white-space: normal;
 }
 
-.hero h1 br {
-    display: block;
+.hero__title-line {
+    white-space: nowrap;
 }
 
-.hero h1 {
+.hero__age-text {
     white-space: nowrap;
 }
 
