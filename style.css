@@ -1964,3 +1964,9 @@ background:
     }
 }
 
+@media (max-width: 768px) {
+    .hero__text {
+        white-space: nowrap;
+        font-size: 17px;
+    }
+}
